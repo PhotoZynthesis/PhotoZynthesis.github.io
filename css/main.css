@@ -57,7 +57,7 @@ div#content {
 	float: left;
 	background-color: #bbbbbb;
     -webkit-overflow-scrolling:touch;
-    overflow-y: scroll;
+    overflow-y: scroll; 
 }
 
 /* 右侧导航区域 */
