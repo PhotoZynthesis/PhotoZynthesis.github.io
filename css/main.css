@@ -39,8 +39,6 @@ div#content {
 	width: 800px;
 	float: left;
 	background-color: #bbbbbb;
-    -webkit-overflow-scrolling:touch;
-    overflow-y: scroll; 
 }
 
 /* 右侧导航区域 */
