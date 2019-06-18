@@ -2,13 +2,14 @@ html, body {
 	margin: 0px;
 	border: 0px;
 	height: 100%;
-	font-family: 'PingFang SC' ,Helvetica;/* Helvetica */
+	font-family: 'PingFang SC' ,Helvetica;
 }
 body {
-	background: url("../img/5-min.jpg") center no-repeat;
+	/*background: url("../img/5-min.jpg") center no-repeat;*/
+	background: center no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	transition: background 1.2s;
+	transition: background 0.5s;
 	/*-webkit-overflow-scrolling:touch;*/
 }
 
@@ -27,9 +28,9 @@ div#container {
 /* 主窗口 */
 div#main {
 	height: 98%;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	box-shadow: 0px 0px 10px 3px #333333;
-	background-color: #ffffff;
+	background-color: transparent;
 	/*border-radius: 15px;*/
 }
 
@@ -38,7 +39,8 @@ div#content {
 	height: 100%;
 	width: 800px;
 	float: left;
-	background-color: #bbbbbb;
+	/*background-color: #bbbbbb;*/
+	background-color: transparent;
 }
 
 /* 右侧导航区域 */
@@ -47,7 +49,7 @@ div#navigator {
 	width: 280px;
 	/*width: 100%;*/
 	float: left;
-	background-color: #dddddd;
+	background-color: rgba(221,221,221,0.85);
 	position: relative;
 }
 
@@ -78,9 +80,10 @@ div#navigator {
 	position: absolute;
 	/*padding: auto;*/
 	/*margin: auto;*/
+	padding-bottom: 8px;
 	height: auto;
-	width: calc(100% - 7px);
-	margin-left: 4px;
+	width: calc(100% - 6px);
+	margin-left: 6px;
 	overflow-x: hidden;
 	overflow-y: auto;
 	/*overflow: -moz-scrollbars-none;*/
@@ -125,6 +128,7 @@ div#navigator {
 /* 根目录下的文章列表 */
 #navItems > ul > .navItem-subList {
 	height: auto !important;
+	overflow: visible !important;
 }
 
 /* 条目前缀 */
@@ -139,7 +143,7 @@ div#navigator {
 
 /* 父级条目 */
 .navItem-title {
-	width: 100%;
+	width: calc(100% - 17px);
 	font-size: 23px;
 	text-decoration: none;
 	display: block;
@@ -184,7 +188,7 @@ div#navigator {
 	/*display: block;*/
 	/*padding: 5px 4px 5px 30px;*/
 	height: 40px;
-	width: 100%;
+	width: calc(100% - 7px);
 	text-decoration: none;
 	color:#333333;
 	text-align: left;
@@ -202,7 +206,7 @@ div#navigator {
 .navItem-title:hover, .navItem-subList-item:hover {
 	color: #cccccc;
 	background-color: #444444;
-	box-shadow: 0px 0px 8px #cccccc inset;
+	box-shadow: 3px 3px 6px 1px #999999;
 }
 
 /* 所有条目 active */
@@ -239,7 +243,7 @@ div.navButton a {
 	padding: 4px;
 	/*width: 184px;*/
 	display: block;
-	background-color: #aaaaaa;
+	background-color: transparent;
 	text-align: center;
 }
 div.navButton a:hover {
