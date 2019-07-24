@@ -19,10 +19,12 @@ function showPage(element) {
             // 清除上个元素的颜色
             lastActiveNode.style.backgroundColor = null;
             lastActiveNode.style.color = null;
+			lastActiveNode.style.boxShadow = null;
         }
         // 改变颜色
         element.style.backgroundColor = '#888888';
         element.style.color = '#eeeeee';
+		element.style.boxShadow = '3px 3px 6px 1px #999999';
     }
     // 显示内容
     document.getElementById('iframe-content').src = 'html/' + element.id + '.html';
